@@ -19,7 +19,7 @@
 	<body>
 		<div class="container">
 			<div class="row">
-				By Thiago
+				By Thiago <?php date('d/m/Y'); ?>
 			</div>
 		</div>
 
