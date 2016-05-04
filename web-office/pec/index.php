@@ -1,0 +1,1 @@
+<?php require_once($_SERVER['DOCUMENT_ROOT'] .'/t/trabalho-ugb/template/index.php') ?>

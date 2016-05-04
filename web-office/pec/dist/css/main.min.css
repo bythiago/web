@@ -1,0 +1,125 @@
+/* * {
+  border:1px solid;
+}
+ */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.content {
+  margin-top: 90px;
+}
+
+.navbar-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: none;
+  border-radius: 0;
+  background-color: rgba(255,255,255,.9);
+  width: 100%;
+  z-index: 2000;
+}
+
+.navbar ul li:hover {
+  background-color: #48CFAD;
+}
+
+header {
+  position: relative;
+  padding: 12em 5em;
+  background: url("http://templated.co/items/demos/retrospect/assets/css/images/overlay.png"), url("http://cavi.com.br/wp-content/uploads/2015/09/criancas-felizes-wallpaper-610x310.jpg") no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+header h2 {
+  color: rgb(255,255,255);
+  /*padding: 0.50em 0.30em;*/
+  /*background: #FFFFFF;*/
+  font-size: 3em;
+  display: block;
+}
+
+header p {
+  display: block;
+  font-size: 1.2em;
+  color: rgb(255,255,255);
+}
+
+/*SECTIONS*/
+#map {
+  padding: 15em 0 ;
+}
+
+section#services {
+  position: relative;
+  padding-bottom: 3em;
+}
+
+section#contato {
+  position: relative;
+  padding: 4em 0;
+}
+
+section#pec {
+  position: relative;
+  padding: 1em 0 3em 0;
+}
+
+footer {
+  background: #121214;
+  border-top: 4px solid #1F1F1F;
+  font-size: 0.9em;
+  padding: 6em 0;
+  position: relative;
+  color: #FFFFFF;
+}
+
+.footer-copyright{
+  margin-top: -40px;
+}
+
+#footer-menu {
+  text-align: right;
+}
+#footer-menu li{
+  display: inline;
+  list-style: none;
+  margin-left: 10px;
+}
+
+.nav-logo {
+  margin-right: 30px;
+  margin-top: 12px;
+}
+
+.fix {
+  padding: em 0;
+  background-attachment: fixed;
+  background: url("http://templated.co/items/demos/retrospect/assets/css/images/overlay.png"), url("http://cavi.com.br/wp-content/uploads/2015/09/criancas-felizes-wallpaper-610x310.jpg") no-repeat center center fixed;
+  background-position: center;
+  background-size: cover;
+  line-height: 1.75;
+  text-align: center;
+  color: #fff;
+}
+
+.my_page {
+  border: 1px solid #999;
+  margin-top: 90px;
+}
+
+.nav .page-scroll:hover{
+  background-color:#8CC152 !important;
+}
