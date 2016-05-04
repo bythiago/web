@@ -1,0 +1,41 @@
+<html>
+<body>
+  <title>OpenLayers</title>
+  <div id="mapdiv"></div>
+  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+  <script>
+    var paises = {};
+      {% for p in paises %}
+        paises = {
+          name: "{{ p.name }}",
+          lat:  "{{ p.lon }}",
+          lng:  "{{ p.lat }}"
+      };
+    {% endfor %}
+
+    map = new OpenLayers.Map("mapdiv");
+    map.addLayer(new OpenLayers.Layer.OSM());
+
+    var lonLat = new OpenLayers.LonLat(paises.lat, paises.lng)
+          .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            map.getProjectionObject() // to Spherical Mercator Projection
+          );
+          
+    var zoom = 0;
+
+    var markers = new OpenLayers.Layer.Markers( "Markers" );
+    map.addLayer(markers);
+    
+    markers.addMarker(new OpenLayers.Marker(lonLat));
+    
+    map.setCenter (lonLat, zoom);
+  </script>
+</body>
+</html>
+<style type="text/css">
+* {
+  padding: 0;
+  margin: 0;
+}
+</style>
