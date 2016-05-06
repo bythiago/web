@@ -18,5 +18,8 @@ from django.contrib import admin
 from mundo import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^index/', views.index),
+    url(r'^openlayers/$', views.openlayers),
+    url(r'^leafletjs/$', views.leafletjs),
+    url(r'^$', views.index),
+
 ]
